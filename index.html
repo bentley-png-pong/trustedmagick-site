@@ -5,88 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trusted Magick | Real traditions. Real depth. No gatekeeping.</title>
   <meta name="description" content="Trusted Magick is where serious practitioners go deep, and where the curious stop guessing and start practicing. Real traditions. Real depth. No gatekeeping." />
-  <meta name="theme-color" content="#090611" />
+  <meta name="theme-color" content="#0f1021" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Trusted Magick | Real traditions. Real depth. No gatekeeping." />
   <meta property="og:description" content="Digital courses rooted in actual traditions, plus AI Mystic Chat with specialized guides trained in specific systems." />
-  <meta property="og:image" content="https://trustedmagick.com/og-image.webp" />
   <meta property="og:url" content="https://trustedmagick.com/" />
+  <meta property="og:image" content="https://trustedmagick.com/og-image.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Trusted Magick | Real traditions. Real depth. No gatekeeping." />
   <meta name="twitter:description" content="Serious magick education and AI guides for the skeptical-curious and dedicated practitioners alike." />
   <meta name="twitter:image" content="https://trustedmagick.com/og-image.webp" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090611'/%3E%3Cpath d='M32 10l5.4 16.6H55L40.8 36.9 46.3 54 32 43.7 17.7 54l5.5-17.1L9 26.6h17.6z' fill='%23d4a94f'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f1021'/%3E%3Cpath d='M32 10l5.4 16.6H55L40.8 36.9 46.3 54 32 43.7 17.7 54l5.5-17.1L9 26.6h17.6z' fill='%23f4d58d'/%3E%3C/svg%3E" />
   <style>
     :root {
-      --bg: #090611;
-      --bg-soft: #120d22;
-      --bg-card: rgba(20, 15, 36, 0.78);
-      --surface: rgba(255, 255, 255, 0.06);
-      --surface-strong: rgba(255, 255, 255, 0.1);
-      --text: #f7f1e8;
-      --muted: #b9b0c7;
-      --gold: #d4a94f;
-      --gold-soft: #f1d89c;
-      --violet: #7c5cff;
-      --violet-soft: #b295ff;
-      --border: rgba(212, 169, 79, 0.18);
-      --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
-      --max: 1180px;
-      --radius: 24px;
+      --bg: #0f1021;
+      --bg-deep: #090914;
+      --bg-panel: rgba(21, 20, 43, 0.78);
+      --bg-panel-strong: rgba(18, 16, 38, 0.92);
+      --text: #f7f2ff;
+      --muted: #b8b0cc;
+      --gold: #f4d58d;
+      --gold-deep: #ddb35c;
+      --violet: #8b5cf6;
+      --lavender: #c6aeff;
+      --border: rgba(198, 174, 255, 0.14);
+      --max: 1200px;
+      --shadow: 0 24px 80px rgba(91, 33, 182, 0.25);
+      --gold-ring: 0 0 0 1px rgba(244, 213, 141, 0.25), 0 24px 80px rgba(91, 33, 182, 0.25);
+      --radius: 2rem;
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 20% 10%, rgba(124, 92, 255, 0.22), transparent 32%),
-        radial-gradient(circle at 80% 0%, rgba(212, 169, 79, 0.14), transparent 26%),
-        radial-gradient(circle at 50% 100%, rgba(57, 25, 98, 0.35), transparent 40%),
-        linear-gradient(180deg, #08050f 0%, #0b0815 38%, #090611 100%);
       color: var(--text);
-      line-height: 1.6;
+      font-family: "Inter", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(139, 92, 246, 0.28), transparent 28%),
+        radial-gradient(circle at 85% 8%, rgba(244, 213, 141, 0.16), transparent 24%),
+        radial-gradient(circle at 50% 100%, rgba(76, 29, 149, 0.28), transparent 34%),
+        linear-gradient(180deg, #121127 0%, #0b0b18 44%, #090914 100%);
+      min-height: 100vh;
       overflow-x: hidden;
     }
 
-    body::before {
+    body::before,
+    body::after {
       content: "";
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image:
-        radial-gradient(2px 2px at 12% 18%, rgba(255,255,255,.55), transparent 60%),
-        radial-gradient(1.5px 1.5px at 72% 24%, rgba(212,169,79,.65), transparent 60%),
-        radial-gradient(1.5px 1.5px at 30% 62%, rgba(178,149,255,.42), transparent 60%),
-        radial-gradient(2px 2px at 84% 71%, rgba(255,255,255,.32), transparent 60%),
-        radial-gradient(1px 1px at 60% 88%, rgba(241,216,156,.55), transparent 60%);
-      opacity: .75;
-      animation: drift 18s ease-in-out infinite alternate;
+      z-index: -1;
     }
 
-    @keyframes drift {
-      from { transform: translateY(0px) scale(1); }
-      to { transform: translateY(-14px) scale(1.02); }
+    body::before {
+      background:
+        radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,0.55), transparent 65%),
+        radial-gradient(2px 2px at 28% 72%, rgba(244,213,141,0.45), transparent 65%),
+        radial-gradient(1.5px 1.5px at 72% 18%, rgba(198,174,255,0.4), transparent 65%),
+        radial-gradient(1.5px 1.5px at 85% 64%, rgba(255,255,255,0.3), transparent 65%),
+        radial-gradient(2px 2px at 56% 84%, rgba(244,213,141,0.28), transparent 65%);
+      opacity: 0.7;
+    }
+
+    body::after {
+      background: linear-gradient(180deg, rgba(9,9,20,0.05), rgba(9,9,20,0.65));
     }
 
     a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
+    img { display: block; max-width: 100%; }
 
-    .container { width: min(calc(100% - 2rem), var(--max)); margin: 0 auto; }
-    .section { padding: 88px 0; position: relative; }
+    .container {
+      width: min(calc(100% - 2rem), var(--max));
+      margin: 0 auto;
+    }
+
+    .glass {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: var(--radius);
+      box-shadow: 0 20px 60px rgba(6, 5, 17, 0.45);
+    }
+
+    .gold-ring {
+      box-shadow: var(--gold-ring);
+    }
+
+    .section {
+      padding: 5.5rem 0;
+      position: relative;
+    }
+
+    .section-label {
+      margin-bottom: 1rem;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .section-title {
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2rem, 4.8vw, 4.2rem);
+      line-height: 1.06;
+    }
+
+    .section-copy,
+    p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .text-shimmer {
+      background: linear-gradient(90deg, #fff, var(--gold), #fff4d7, #fff);
+      background-size: 220% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shimmer 8s linear infinite;
+    }
+
+    @keyframes shimmer {
+      to { background-position: 220% center; }
+    }
 
     .nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      backdrop-filter: blur(18px);
-      background: rgba(8, 5, 15, 0.62);
-      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: rgba(10, 10, 22, 0.68);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
     .nav-inner {
-      min-height: 76px;
+      min-height: 80px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -96,31 +158,31 @@
     .brand {
       display: inline-flex;
       align-items: center;
-      gap: .75rem;
-      font-weight: 700;
-      letter-spacing: .08em;
+      gap: 0.85rem;
+      font-size: 0.86rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      font-size: .86rem;
     }
 
     .brand-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 1rem;
       display: grid;
       place-items: center;
-      background: linear-gradient(145deg, rgba(212,169,79,.22), rgba(124,92,255,.16));
-      border: 1px solid rgba(212,169,79,.22);
-      box-shadow: inset 0 0 24px rgba(255,255,255,.05), 0 10px 30px rgba(0,0,0,.35);
-      color: var(--gold-soft);
-      font-size: 1.2rem;
+      background: linear-gradient(145deg, rgba(244,213,141,0.18), rgba(139,92,246,0.18));
+      border: 1px solid rgba(244,213,141,0.24);
+      color: var(--gold);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
     }
 
     .nav-links {
       display: none;
-      gap: 1rem;
+      gap: 1.2rem;
+      align-items: center;
+      font-size: 0.94rem;
       color: var(--muted);
-      font-size: .95rem;
     }
 
     .nav-links a:hover { color: var(--text); }
@@ -129,255 +191,390 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: .6rem;
-      min-height: 50px;
-      padding: 0 1.15rem;
+      gap: 0.65rem;
+      min-height: 3.3rem;
+      padding: 0.85rem 1.5rem;
       border-radius: 999px;
       border: 1px solid transparent;
       font-weight: 700;
-      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
       cursor: pointer;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 18px 40px rgba(0,0,0,.28);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.22);
     }
 
     .btn-primary {
-      color: #140d00;
-      background: linear-gradient(135deg, var(--gold-soft), var(--gold));
-      box-shadow: 0 14px 34px rgba(212,169,79,.24);
+      color: #241700;
+      background: linear-gradient(135deg, #f8e3ad 0%, var(--gold) 100%);
     }
 
     .btn-secondary {
-      border-color: rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
+      background: rgba(255,255,255,0.02);
+      border-color: rgba(255,255,255,0.12);
       color: var(--text);
     }
 
     .hero {
-      padding: 72px 0 96px;
-      min-height: calc(100vh - 76px);
-      display: flex;
-      align-items: center;
+      padding: 2.25rem 0 4rem;
     }
 
-    .hero-grid {
-      display: grid;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: .55rem;
-      padding: .45rem .8rem;
-      border-radius: 999px;
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(212,169,79,.16);
-      color: var(--gold-soft);
-      font-size: .82rem;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-    }
-
-    h1, h2, h3 { line-height: 1.08; margin: 0; font-family: Georgia, "Times New Roman", serif; }
-    h1 { font-size: clamp(2.7rem, 6vw, 5.5rem); max-width: 12ch; margin: 1rem 0; }
-    h2 { font-size: clamp(2rem, 4vw, 3.45rem); margin-bottom: 1rem; }
-    h3 { font-size: 1.3rem; margin-bottom: .6rem; }
-
-    .lead {
-      font-size: clamp(1.08rem, 2vw, 1.34rem);
-      color: var(--muted);
-      max-width: 62ch;
-    }
-
-    .hero-copy p + p { margin-top: 1rem; }
-    .hero-actions, .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .85rem;
-      margin-top: 1.6rem;
-    }
-
-    .hero-card, .glass, .pricing-card, .quote, .path-card, .product-card {
-      background: var(--bg-card);
-      border: 1px solid rgba(255,255,255,.08);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(16px);
-    }
-
-    .hero-card {
-      border-radius: 30px;
-      padding: 1.2rem;
-      overflow: hidden;
+    .hero-shell {
+      padding: 2rem;
       position: relative;
+      overflow: hidden;
     }
 
-    .hero-card::before {
+    .hero-shell::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(212,169,79,.08), transparent 35%, rgba(124,92,255,.08));
+      background:
+        radial-gradient(circle at top left, rgba(244,213,141,0.15), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(139,92,246,0.22), transparent 34%);
       pointer-events: none;
     }
 
-    .oracle {
-      border-radius: 24px;
-      padding: 1.4rem;
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border: 1px solid rgba(212,169,79,.12);
-      min-height: 100%;
+    .hero-grid,
+    .two-col,
+    .trust-layout {
+      display: grid;
+      gap: 1.5rem;
     }
 
-    .oracle-top, .mini-label {
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      margin: 1rem 0 1.2rem;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: 0.96;
+      max-width: 11ch;
+    }
+
+    .hero-lead {
+      max-width: 38rem;
+      font-size: 1.14rem;
+    }
+
+    .chip-row,
+    .hero-actions,
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .chip-row { margin-top: 1.3rem; }
+
+    .chip {
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #ebe4ff;
+      font-size: 0.92rem;
+    }
+
+    .hero-actions { margin-top: 1.8rem; }
+
+    .hero-panel {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .mystic-preview,
+    .mini-card,
+    .stat-card,
+    .feature-card,
+    .step-card,
+    .tradition-card,
+    .product-card,
+    .testimonial-card,
+    .trust-card,
+    .pricing-card,
+    .final-cta {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: 2rem;
+    }
+
+    .mystic-preview {
+      padding: 1.5rem;
+    }
+
+    .mini-label {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
-      color: var(--muted);
-      font-size: .82rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: .08em;
+      letter-spacing: 0.28em;
+      color: var(--gold);
     }
 
-    .oracle-title {
-      margin: 1rem 0 .75rem;
-      font-size: 1.35rem;
-      font-family: Georgia, serif;
+    .mystic-title {
+      margin: 1rem 0 0.7rem;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 2rem;
+      line-height: 1.12;
     }
 
-    .oracle-list {
+    .message-stack {
       display: grid;
-      gap: .7rem;
-      margin-top: 1rem;
+      gap: 0.85rem;
+      margin-top: 1.4rem;
     }
 
-    .oracle-item {
-      padding: .9rem 1rem;
-      border-radius: 18px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.06);
+    .message {
+      padding: 1rem 1.05rem;
+      border-radius: 1.35rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: #f2ebff;
     }
 
-    .grid-2, .grid-3, .grid-4 {
+    .message em {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: var(--gold);
+      font-style: normal;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .mini-grid,
+    .stats-grid,
+    .products-grid,
+    .testimonial-grid,
+    .pricing-grid,
+    .tradition-grid {
       display: grid;
       gap: 1rem;
     }
 
-    .glass {
-      border-radius: var(--radius);
-      padding: 1.5rem;
-    }
+    .mini-grid { grid-template-columns: repeat(2, 1fr); }
 
-    .stat-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: .9rem;
-      margin-top: 1.25rem;
-    }
-
-    .stat {
+    .mini-card {
       padding: 1rem;
-      border-radius: 18px;
-      background: rgba(255,255,255,.03);
-      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 1.5rem;
     }
 
-    .stat strong { display: block; font-size: 1.35rem; color: var(--gold-soft); margin-bottom: .2rem; }
-
-    .section-head {
-      max-width: 70ch;
-      margin-bottom: 2rem;
+    .mini-card strong,
+    .stat-card strong,
+    .product-price,
+    .price {
+      display: block;
+      color: var(--gold);
+      font-weight: 700;
     }
 
-    .muted { color: var(--muted); }
-
-    .path-card, .product-card, .quote, .pricing-card {
-      border-radius: 24px;
-      padding: 1.3rem;
-      transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
+    .stats-grid,
+    .tradition-grid,
+    .products-grid,
+    .testimonial-grid,
+    .pricing-grid {
+      grid-template-columns: 1fr;
     }
 
-    .path-card:hover, .product-card:hover, .quote:hover, .pricing-card:hover {
+    .stat-card,
+    .feature-card,
+    .step-card,
+    .tradition-card,
+    .product-card,
+    .testimonial-card,
+    .trust-card,
+    .pricing-card {
+      padding: 1.5rem;
+      transition: transform 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+    }
+
+    .stat-card:hover,
+    .feature-card:hover,
+    .step-card:hover,
+    .tradition-card:hover,
+    .product-card:hover,
+    .testimonial-card:hover,
+    .pricing-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(212,169,79,.28);
-      box-shadow: 0 26px 60px rgba(0,0,0,.34);
+      border-color: rgba(244,213,141,0.24);
+      background: rgba(24, 22, 48, 0.88);
     }
 
-    .kicker {
-      display: inline-block;
-      color: var(--gold-soft);
-      font-size: .82rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      margin-bottom: .8rem;
+    .stat-icon,
+    .product-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(244,213,141,0.12);
+      color: var(--gold);
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
     }
 
-    ul.clean {
-      padding-left: 1.1rem;
+    .feature-card ul,
+    .pricing-card ul,
+    .trust-list {
       margin: 1rem 0 0;
+      padding-left: 1.15rem;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .step-card {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      flex: 0 0 3rem;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: #231700;
+      background: linear-gradient(135deg, #f8e4b4 0%, var(--gold) 100%);
+      box-shadow: 0 0 0 1px rgba(244,213,141,0.18);
+    }
+
+    .step-card h3,
+    .feature-card h3,
+    .tradition-card h3,
+    .product-card h3,
+    .pricing-card h3,
+    .trust-card h3 {
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.4rem;
+      line-height: 1.15;
+    }
+
+    .illustration-card {
+      position: relative;
+      padding: 1.75rem;
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .orbit {
+      position: absolute;
+      border-radius: 999px;
+      border: 1px solid rgba(244,213,141,0.18);
+      inset: auto;
+    }
+
+    .orbit.one { width: 17rem; height: 17rem; top: 2rem; right: -1.5rem; }
+    .orbit.two { width: 11rem; height: 11rem; bottom: 2rem; left: -1rem; border-color: rgba(198,174,255,0.16); }
+
+    .arc-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .arc-grid .mini-card {
+      background: rgba(255,255,255,0.035);
+    }
+
+    .dramatic-panel {
+      padding: 2rem;
+      background:
+        radial-gradient(circle at top right, rgba(244,213,141,0.12), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(139,92,246,0.2), transparent 30%),
+        var(--bg-panel-strong);
+    }
+
+    .testimonial-card blockquote {
+      margin: 0 0 1rem;
+      color: #f5efff;
+      font-size: 1.03rem;
+      line-height: 1.85;
+    }
+
+    .testimonial-meta {
+      color: var(--gold);
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .pricing-card .badge {
+      display: inline-flex;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.76rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
       color: var(--muted);
     }
 
-    .steps {
-      display: grid;
-      gap: .9rem;
-      margin-top: 1.2rem;
-    }
-
-    .step {
-      padding: 1rem 1.1rem;
-      border-left: 2px solid rgba(212,169,79,.35);
-      background: rgba(255,255,255,.03);
-      border-radius: 0 18px 18px 0;
-    }
-
-    .quote p { font-size: 1.08rem; color: var(--text); }
-    .quote cite { color: var(--gold-soft); font-style: normal; }
-
     .pricing-card.featured {
-      background: linear-gradient(180deg, rgba(212,169,79,.12), rgba(20,15,36,.9));
-      border-color: rgba(212,169,79,.28);
+      position: relative;
+      background: linear-gradient(180deg, rgba(244,213,141,0.09), rgba(21,20,43,0.9));
+      box-shadow: var(--gold-ring);
     }
 
     .price {
-      font-family: Georgia, serif;
-      font-size: 2.4rem;
-      margin: .4rem 0 .8rem;
+      margin: 1rem 0 0.35rem;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 3rem;
+      line-height: 1;
     }
 
-    .badge {
-      display: inline-flex;
-      padding: .35rem .7rem;
-      border-radius: 999px;
-      font-size: .78rem;
-      background: rgba(212,169,79,.12);
-      color: var(--gold-soft);
-      border: 1px solid rgba(212,169,79,.22);
+    .price span {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 600;
     }
 
     .final-cta {
+      padding: 2.6rem;
       text-align: center;
-      padding: 2rem;
-      border-radius: 30px;
-      background: linear-gradient(180deg, rgba(124,92,255,.12), rgba(212,169,79,.08));
-      border: 1px solid rgba(255,255,255,.08);
-      box-shadow: var(--shadow);
+      background:
+        radial-gradient(circle at top, rgba(244,213,141,0.18), transparent 30%),
+        linear-gradient(135deg, rgba(139,92,246,0.18), rgba(244,213,141,0.08));
+      box-shadow: var(--gold-ring);
+    }
+
+    .final-cta .section-title,
+    .final-cta p {
+      max-width: 52rem;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     footer {
-      padding: 2rem 0 3rem;
+      padding: 1rem 0 3rem;
       color: var(--muted);
-      font-size: .92rem;
+      text-align: center;
+      font-size: 0.92rem;
     }
 
     .reveal {
       opacity: 0;
       transform: translateY(24px);
-      transition: opacity .75s ease, transform .75s ease;
+      transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
     .reveal.visible {
@@ -385,13 +582,40 @@
       transform: translateY(0);
     }
 
-    @media (min-width: 760px) {
+    @media (min-width: 720px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .tradition-grid { grid-template-columns: repeat(2, 1fr); }
+      .products-grid { grid-template-columns: repeat(3, 1fr); }
+      .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+      .trust-layout { grid-template-columns: 1.1fr 0.9fr; }
+    }
+
+    @media (min-width: 980px) {
       .nav-links { display: flex; }
-      .hero-grid { grid-template-columns: 1.1fr .9fr; }
-      .grid-2 { grid-template-columns: repeat(2, 1fr); }
-      .grid-3 { grid-template-columns: repeat(3, 1fr); }
-      .grid-4 { grid-template-columns: repeat(4, 1fr); }
-      .glass.spread { padding: 2rem; }
+      .hero-shell { padding: 2.5rem; }
+      .hero-grid { grid-template-columns: 1.1fr 0.9fr; gap: 2rem; }
+      .two-col { grid-template-columns: 1.05fr 0.95fr; gap: 1.5rem; }
+      .stats-grid { grid-template-columns: repeat(4, 1fr); }
+      .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 719px) {
+      .section { padding: 4rem 0; }
+      .hero-title { max-width: none; }
+      .hero-shell,
+      .dramatic-panel,
+      .final-cta,
+      .glass,
+      .stat-card,
+      .feature-card,
+      .step-card,
+      .tradition-card,
+      .product-card,
+      .testimonial-card,
+      .trust-card,
+      .pricing-card { border-radius: 1.5rem; }
+      .mini-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -405,70 +629,130 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#chat">AI Mystic Chat</a>
-        <a href="#finder">Tradition Finder</a>
+        <a href="#finder">Traditions</a>
         <a href="#products">Products</a>
+        <a href="#trust">Trust</a>
         <a href="#pricing">Pricing</a>
       </div>
-      <a class="btn btn-secondary" href="#pricing">Start Free</a>
+      <a class="btn btn-secondary ph-cta" href="#">Start Free</a>
     </div>
   </nav>
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal visible">
-          <div class="eyebrow">Premium learning for serious practitioners</div>
-          <h1>Your practice deserves more than Pinterest boards and Reddit threads.</h1>
-          <p class="lead">Trusted Magick is where serious practitioners go deep, and where the curious stop guessing and start practicing.</p>
-          <p class="lead">Real traditions. Real depth. No gatekeeping.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary ph-cta" href="#">Try AI Mystic Chat Free</a>
-            <a class="btn btn-secondary ph-cta" href="#products">Browse Products</a>
-          </div>
-        </div>
-
-        <div class="hero-card reveal">
-          <div class="oracle">
-            <div class="oracle-top">
-              <span>AI Mystic Chat</span>
-              <span>24/7 depth</span>
+      <div class="container">
+        <div class="hero-shell glass gold-ring reveal visible">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="section-label">Real traditions. Real depth. No gatekeeping.</div>
+              <h1 class="hero-title">Your practice deserves more than <span class="text-shimmer">Pinterest boards</span> and Reddit threads.</h1>
+              <p class="hero-lead">Trusted Magick is where serious practitioners go deep, and where the curious stop guessing and start practicing.</p>
+              <p class="hero-lead">Real traditions. Real depth. No gatekeeping.</p>
+              <div class="chip-row">
+                <span class="chip">All traditions welcome</span>
+                <span class="chip">AI-powered guides</span>
+                <span class="chip">Practitioner-grade depth</span>
+                <span class="chip">Free to start</span>
+              </div>
+              <div class="hero-actions">
+                <a class="btn btn-primary ph-cta" href="#">Try AI Mystic Chat Free</a>
+                <a class="btn btn-secondary ph-cta" href="#">Browse Products</a>
+              </div>
             </div>
-            <div class="oracle-title">A roster of specialized guides, not one generic bot.</div>
-            <p class="muted">Herbal correspondences. Kabbalistic pathworking. Tarot spreads. Hoodoo rootwork. Norse rune systems.</p>
-            <div class="oracle-list">
-              <div class="oracle-item">Pick a mystic from the roster, or let the Tradition Finder match you.</div>
-              <div class="oracle-item">Ask anything, beginner or advanced, and get sourced, tradition-specific guidance.</div>
-              <div class="oracle-item">Save your conversation history and build on it over time.</div>
+
+            <div class="hero-panel">
+              <div class="mystic-preview">
+                <div class="mini-label">
+                  <span>AI Mystic Chat</span>
+                  <span>24/7 office hours</span>
+                </div>
+                <h2 class="mystic-title">A roster of specialized AI guides trained in specific traditions.</h2>
+                <p>You don't get a generic chatbot that says “trust your intuition.” You get grounded answers, sourced guidance, and room to go deep.</p>
+                <div class="message-stack">
+                  <div class="message"><em>Herbal Guide</em>Materia magica meets materia medica. Start with the plant itself, then the folklore around it.</div>
+                  <div class="message"><em>Ceremonial Guide</em>Banishing, invoking, correspondences, and actual symbolic structure, not vague aesthetics.</div>
+                  <div class="message"><em>Divination Guide</em>Tarot, runes, scrying, pattern recognition, and an honest conversation about what divination is doing.</div>
+                </div>
+              </div>
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <strong>Beginner to advanced</strong>
+                  <p>Ask anything and build on saved chat history over time.</p>
+                </div>
+                <div class="mini-card">
+                  <strong>Skeptical-curious welcome</strong>
+                  <p>Treat it as a research tool, an encyclopedia that talks back.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">What is Trusted Magick?</span>
-          <h2>Something better than watered-down content and crystal-box marketing.</h2>
-          <p class="lead">Most "magick" content online is watered down, decontextualized, or trying to sell you a crystal subscription box. We built something different.</p>
-        </div>
-        <div class="glass spread reveal">
-          <p><strong>Trusted Magick is two things:</strong></p>
-          <div class="grid-2">
-            <div>
-              <h3>1. Digital courses and guides rooted in actual traditions</h3>
-              <p class="muted">Herbal, ceremonial, divinatory, folk, and more. Written by practitioners. Cited sources. No fluff.</p>
-            </div>
-            <div>
-              <h3>2. AI Mystic Chat</h3>
-              <p class="muted">A roster of specialized AI guides trained in specific traditions. Ask real questions. Get grounded answers. Go as deep as you want.</p>
-            </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-icon">✦</div>
+            <strong>All Traditions</strong>
+            <p>Herbal, ceremonial, divinatory, folk, and more, with clear tradition boundaries.</p>
           </div>
-          <p class="muted">Whether you've been practicing for twenty years or you picked up your first tarot deck last Tuesday, the door's open.</p>
-          <div class="stat-row">
-            <div class="stat"><strong>Real</strong><span>traditions</span></div>
-            <div class="stat"><strong>Deep</strong><span>source-backed learning</span></div>
-            <div class="stat"><strong>Open</strong><span>to practitioners and the curious</span></div>
+          <div class="stat-card reveal">
+            <div class="stat-icon">☽</div>
+            <strong>AI-Powered Guides</strong>
+            <p>A roster of specialized mystics, not one flattening generic assistant.</p>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon">◈</div>
+            <strong>Practitioner-Grade</strong>
+            <p>Written by practitioners, with cited sources and honest depth.</p>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-icon">◎</div>
+            <strong>Free to Start</strong>
+            <p>Try the Tradition Finder and free AI sessions before committing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="reveal">
+          <div class="section-label">What is Trusted Magick?</div>
+          <h2 class="section-title">We built something different.</h2>
+          <p class="section-copy">Most "magick" content online is watered down, decontextualized, or trying to sell you a crystal subscription box.</p>
+          <p class="section-copy"><strong style="color: var(--text);">Trusted Magick is two things:</strong></p>
+          <div class="feature-card" style="margin-bottom:1rem;">
+            <h3>Digital courses and guides rooted in actual traditions</h3>
+            <p>Herbal, ceremonial, divinatory, folk, and more. Written by practitioners. Cited sources. No fluff.</p>
+          </div>
+          <div class="feature-card">
+            <h3>AI Mystic Chat</h3>
+            <p>A roster of specialized AI guides trained in specific traditions. Ask real questions. Get grounded answers. Go as deep as you want.</p>
+          </div>
+          <p class="section-copy">Whether you've been practicing for twenty years or you picked up your first tarot deck last Tuesday, the door's open.</p>
+        </div>
+        <div class="illustration-card glass reveal">
+          <div class="orbit one"></div>
+          <div class="orbit two"></div>
+          <div class="section-label">Inside the platform</div>
+          <h3 style="font-size:2rem;">Depth over decontextualized vibes.</h3>
+          <p>Every path inside Trusted Magick is designed to feel like stepping into a serious study room, not wandering through recycled blog filler.</p>
+          <div class="arc-grid">
+            <div class="mini-card">
+              <strong>Written by practitioners</strong>
+              <p>Tradition-specific voices, with context instead of flattening.</p>
+            </div>
+            <div class="mini-card">
+              <strong>Cited and sourced</strong>
+              <p>Lineage, references, and where to go deeper outside the platform.</p>
+            </div>
+            <div class="mini-card">
+              <strong>No gatekeeping</strong>
+              <p>Whether you're devout, exploratory, or skeptical, the door stays open.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -476,27 +760,48 @@
 
     <section id="chat" class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">AI Mystic Chat</span>
-          <h2>Think of it as office hours with a dozen different specialists, available 24/7.</h2>
-          <p class="lead">You don't get a generic chatbot that says "trust your intuition." You get depth.</p>
-        </div>
-        <div class="grid-2">
-          <div class="glass reveal">
-            <h3>How it works</h3>
-            <div class="steps">
-              <div class="step">Pick a mystic from the roster (or let the Tradition Finder match you)</div>
-              <div class="step">Ask anything, beginner or advanced</div>
-              <div class="step">Get sourced, tradition-specific guidance</div>
-              <div class="step">Save your conversation history and build on it over time</div>
+        <div class="dramatic-panel gold-ring reveal">
+          <div class="section-label">AI Mystic Chat</div>
+          <h2 class="section-title">Think of it as office hours with a dozen different specialists, available 24/7.</h2>
+          <p class="section-copy" style="max-width: 52rem;">Each AI mystic is trained in a specific tradition. Herbal correspondences. Kabbalistic pathworking. Tarot spreads. Hoodoo rootwork. Norse rune systems.</p>
+          <div class="two-col" style="margin-top:2rem; align-items:start;">
+            <div class="feature-card">
+              <h3>For the skeptical-curious</h3>
+              <p>You don't need to believe in anything to use this. Treat it as a research tool. An encyclopedia that talks back. A way to explore philosophical and symbolic systems on your own terms. The frameworks are real whether you call it magick or applied psychology.</p>
+              <p style="color: var(--text); font-weight: 600;">Start free. No card required.</p>
+              <div class="cta-row">
+                <a class="btn btn-primary ph-cta" href="#">Try AI Mystic Chat →</a>
+              </div>
             </div>
-          </div>
-          <div class="glass reveal">
-            <h3>For the skeptical-curious</h3>
-            <p class="muted">You don't need to believe in anything to use this. Treat it as a research tool. An encyclopedia that talks back. A way to explore philosophical and symbolic systems on your own terms. The frameworks are real whether you call it magick or applied psychology.</p>
-            <p>Start free. No card required.</p>
-            <div class="cta-row">
-              <a class="btn btn-primary ph-cta" href="#">Try AI Mystic Chat →</a>
+            <div>
+              <div class="step-card reveal" style="margin-bottom:1rem;">
+                <div class="step-number">1</div>
+                <div>
+                  <h3>Pick a mystic from the roster</h3>
+                  <p>Or let the Tradition Finder match you to the system that fits what actually interests you.</p>
+                </div>
+              </div>
+              <div class="step-card reveal" style="margin-bottom:1rem;">
+                <div class="step-number">2</div>
+                <div>
+                  <h3>Ask anything, beginner or advanced</h3>
+                  <p>From correspondences and spread mechanics to philosophy, lineage, and practice structure.</p>
+                </div>
+              </div>
+              <div class="step-card reveal" style="margin-bottom:1rem;">
+                <div class="step-number">3</div>
+                <div>
+                  <h3>Get sourced, tradition-specific guidance</h3>
+                  <p>No generic spiritual wallpaper. Actual answers with context.</p>
+                </div>
+              </div>
+              <div class="step-card reveal">
+                <div class="step-number">4</div>
+                <div>
+                  <h3>Save your history and build on it</h3>
+                  <p>Let your practice compound over time instead of starting from scratch in every conversation.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -505,74 +810,75 @@
 
     <section id="finder" class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Find your path</span>
-          <h2>The Tradition Finder</h2>
-          <p class="lead">Not sure where to start? Good. That's honest.</p>
-          <p class="muted">Take a 2-minute quiz. We'll match you with a tradition based on what actually interests you, not what's trending.</p>
-        </div>
-        <div class="grid-2">
-          <article class="path-card reveal">
-            <h3>Drawn to plants and seasons?</h3>
-            <p class="muted">→ Herbal &amp; Green Craft</p>
+        <div class="section-label reveal">Find your path</div>
+        <h2 class="section-title reveal">The Tradition Finder</h2>
+        <p class="section-copy reveal" style="max-width: 48rem;">Not sure where to start? Good. That's honest. Take a 2-minute quiz. We'll match you with a tradition based on what actually interests you, not what's trending.</p>
+        <div class="tradition-grid" style="margin-top:2rem;">
+          <article class="tradition-card reveal">
+            <h3>Herbal &amp; Green Craft</h3>
+            <p>Drawn to plants and seasons? Start where roots, remedies, and ritual meet.</p>
           </article>
-          <article class="path-card reveal">
-            <h3>Want structured ritual and symbolic systems?</h3>
-            <p class="muted">→ Ceremonial Foundations</p>
+          <article class="tradition-card reveal">
+            <h3>Ceremonial Foundations</h3>
+            <p>Want structured ritual and symbolic systems? Build on real operating principles.</p>
           </article>
-          <article class="path-card reveal">
-            <h3>Interested in divination and pattern recognition?</h3>
-            <p class="muted">→ Tarot, Runes, or I Ching</p>
+          <article class="tradition-card reveal">
+            <h3>Tarot, Runes, or I Ching</h3>
+            <p>Interested in divination and pattern recognition? Work with systems that reward practice.</p>
           </article>
-          <article class="path-card reveal">
-            <h3>Value ancestors and cultural roots?</h3>
-            <p class="muted">→ Folk Traditions &amp; Rootwork</p>
+          <article class="tradition-card reveal">
+            <h3>Folk Traditions &amp; Rootwork</h3>
+            <p>Value ancestors and cultural roots? Begin with lineage, lived context, and respect.</p>
           </article>
         </div>
-        <div class="glass reveal" style="margin-top:1rem;">
-          <p class="muted">No tradition is better than another. The best one is the one you'll actually practice.</p>
-          <a class="btn btn-secondary ph-cta" href="#">Take the Tradition Finder Quiz</a>
+        <div class="feature-card reveal" style="margin-top:1rem;">
+          <p>No tradition is better than another. The best one is the one you'll actually practice.</p>
+          <div class="cta-row">
+            <a class="btn btn-secondary ph-cta" href="#">Take the Tradition Finder Quiz</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="products" class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Digital products</span>
-          <h2>Deep dives. Not surface skims.</h2>
-          <p class="lead">Every product includes sourced material, practical exercises, and tradition-specific context. No copy-paste blog content repackaged as a "masterclass."</p>
+        <div class="section-label reveal">Digital products</div>
+        <h2 class="section-title reveal">Deep dives. Not surface skims.</h2>
+        <p class="section-copy reveal" style="max-width: 52rem;">Every product includes sourced material, practical exercises, and tradition-specific context. No copy-paste blog content repackaged as a “masterclass.”</p>
+        <div class="products-grid" style="margin-top:2rem;">
+          <article class="product-card reveal">
+            <div class="product-icon">🌿</div>
+            <h3>Herbal Magick: Root &amp; Remedy</h3>
+            <span class="product-price">$27</span>
+            <p>Materia magica meets materia medica. Build a real practice with plants.</p>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-icon">⭐</div>
+            <h3>Ceremonial Foundations</h3>
+            <span class="product-price">$39</span>
+            <p>Banishing, invoking, circle work. The operating system behind most Western magick.</p>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-icon">🔮</div>
+            <h3>Divination Deep-Dive</h3>
+            <span class="product-price">$33</span>
+            <p>Tarot, runes, scrying, pendulum, technique, history, and honest talk about what divination actually does.</p>
+          </article>
         </div>
-        <div class="grid-3">
-          <article class="product-card reveal">
-            <h3>🌿 Herbal Magick: Root &amp; Remedy</h3>
-            <p class="muted">Materia magica meets materia medica. Build a real practice with plants.</p>
-          </article>
-          <article class="product-card reveal">
-            <h3>⭐ Ceremonial Foundations</h3>
-            <p class="muted">Banishing, invoking, circle work. The operating system behind most Western magick.</p>
-          </article>
-          <article class="product-card reveal">
-            <h3>🔮 Divination Deep-Dive</h3>
-            <p class="muted">Tarot, runes, scrying, pendulum. Technique, history, and honest talk about what divination actually does.</p>
-          </article>
-        </div>
-        <div class="cta-row reveal">
+        <div class="cta-row reveal" style="margin-top:1.5rem;">
           <a class="btn btn-primary ph-cta" href="#">See All Products →</a>
         </div>
       </div>
     </section>
 
     <section id="trust" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Trust &amp; credentials</span>
-          <h2>We cite our sources, and we tell you what we don't know.</h2>
-          <p class="lead">Every tradition page lists lineage, references, and where to go deeper outside our platform.</p>
-        </div>
-        <div class="grid-2">
-          <div class="glass reveal">
-            <ul class="clean">
+      <div class="container trust-layout">
+        <div>
+          <div class="section-label reveal">Trust &amp; credentials</div>
+          <h2 class="section-title reveal">We cite our sources. We label our limits. We respect the traditions.</h2>
+          <div class="trust-card reveal" style="margin-top:1.5rem;">
+            <h3>What that looks like in practice</h3>
+            <ul class="trust-list">
               <li>Tradition-specific content reviewed by practicing specialists</li>
               <li>Source bibliography included with every course</li>
               <li>No mixing traditions without clear labeling</li>
@@ -580,51 +886,55 @@
               <li>We tell you what we don't know. If a topic is outside our depth, we say so.</li>
             </ul>
           </div>
-          <div class="grid-2">
-            <blockquote class="quote reveal">
-              <p>"Finally, someone who treats Hoodoo and Hermeticism with the same rigor instead of blending them into smoothie spirituality."</p>
-              <cite>— Beta practitioner</cite>
-            </blockquote>
-            <blockquote class="quote reveal">
-              <p>"I'm an atheist who's been curious about symbolic systems for years. This is the first resource that didn't ask me to 'just believe.'"</p>
-              <cite>— Beta user</cite>
-            </blockquote>
-          </div>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <blockquote>“Finally, someone who treats Hoodoo and Hermeticism with the same rigor instead of blending them into smoothie spirituality.”</blockquote>
+            <div class="testimonial-meta">Beta practitioner</div>
+          </article>
+          <article class="testimonial-card reveal">
+            <blockquote>“I'm an atheist who's been curious about symbolic systems for years. This is the first resource that didn't ask me to ‘just believe.’”</blockquote>
+            <div class="testimonial-meta">Beta user</div>
+          </article>
+          <article class="testimonial-card reveal">
+            <blockquote>“The tradition boundaries are clear, the explanations are sharp, and the AI answers feel like talking to someone who actually read the books.”</blockquote>
+            <div class="testimonial-meta">Early access member</div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="pricing" class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Pricing</span>
-          <h2>Start free, go deeper when you're ready.</h2>
-          <p class="lead">All plans cancel anytime. No contracts. No blood oaths.</p>
-        </div>
-        <div class="grid-3">
+        <div class="section-label reveal">Pricing</div>
+        <h2 class="section-title reveal">All plans cancel anytime. No contracts. No blood oaths.</h2>
+        <div class="pricing-grid" style="margin-top:2rem;">
           <article class="pricing-card reveal">
             <span class="badge">Free</span>
-            <div class="price">$0<span style="font-size:1rem;color:var(--muted);font-family:inherit;">/forever</span></div>
-            <ul class="clean">
+            <h3 style="margin-top:1rem;">Start exploring</h3>
+            <div class="price">$0 <span>/ forever</span></div>
+            <ul>
               <li>3 AI Mystic Chat sessions/month</li>
               <li>Tradition Finder quiz</li>
               <li>Sample lessons from each course</li>
             </ul>
           </article>
-          <article class="pricing-card featured reveal">
+          <article class="pricing-card reveal">
             <span class="badge">Practitioner</span>
-            <div class="price">$13<span style="font-size:1rem;color:var(--muted);font-family:inherit;">/mo</span></div>
-            <ul class="clean">
+            <h3 style="margin-top:1rem;">Go deeper</h3>
+            <div class="price">$13 <span>/ mo</span></div>
+            <ul>
               <li>Unlimited AI Mystic Chat</li>
-              <li>Full access to 1 course</li>
+              <li>Full access to 1 course of your choice</li>
               <li>Conversation history &amp; saved notes</li>
               <li>15% off additional products</li>
             </ul>
           </article>
-          <article class="pricing-card reveal">
+          <article class="pricing-card featured reveal">
             <span class="badge">Circle</span>
-            <div class="price">$29<span style="font-size:1rem;color:var(--muted);font-family:inherit;">/mo</span></div>
-            <ul class="clean">
+            <h3 style="margin-top:1rem;">Full access</h3>
+            <div class="price">$29 <span>/ mo</span></div>
+            <ul>
               <li>Everything in Practitioner</li>
               <li>Full product library access</li>
               <li>Priority AI response depth</li>
@@ -633,7 +943,7 @@
             </ul>
           </article>
         </div>
-        <div class="cta-row reveal">
+        <div class="cta-row reveal" style="margin-top:1.5rem; justify-content:center;">
           <a class="btn btn-primary ph-cta" href="#">Start Free →</a>
         </div>
       </div>
@@ -642,13 +952,14 @@
     <section class="section">
       <div class="container">
         <div class="final-cta reveal">
-          <span class="kicker">Final call</span>
-          <h2>You've read this far. That means something's pulling you.</h2>
-          <p class="lead" style="margin: 1rem auto 0;">Maybe it's a practice you've been building alone. Maybe it's curiosity you've never had a safe place to explore. Maybe you just want answers that aren't garbage.</p>
-          <p class="lead" style="margin: 1rem auto 0;">We built Trusted Magick for all three.</p>
-          <p class="lead" style="margin: 1rem auto 0;">Start with a free AI Mystic Chat session. See if the depth is real.</p>
-          <div class="cta-row" style="justify-content:center;">
+          <div class="section-label">Final CTA</div>
+          <h2 class="section-title">You've read this far. That means something's pulling you.</h2>
+          <p>Maybe it's a practice you've been building alone. Maybe it's curiosity you've never had a safe place to explore. Maybe you just want answers that aren't garbage.</p>
+          <p>We built Trusted Magick for all three.</p>
+          <p style="color: var(--text);">Start with a free AI Mystic Chat session. See if the depth is real.</p>
+          <div class="cta-row" style="justify-content:center; margin-top:1.8rem;">
             <a class="btn btn-primary ph-cta" href="#">Try It Free — No Card Required</a>
+            <a class="btn btn-secondary ph-cta" href="#">Browse Products</a>
           </div>
         </div>
       </div>
@@ -656,9 +967,7 @@
   </main>
 
   <footer>
-    <div class="container">
-      <div>Trusted Magick, real traditions, real depth, no gatekeeping.</div>
-    </div>
+    <div class="container">Trusted Magick, serious magick education for practitioners and the skeptical-curious alike.</div>
   </footer>
 
   <script>
@@ -671,14 +980,14 @@
       autocapture: true
     });
 
-    posthog.capture('trustedmagick_landing_view');
+    posthog.capture('trustedmagick_landing_view', { project_id: 354015 });
 
-    document.querySelectorAll('.ph-cta').forEach(function (button) {
-      button.addEventListener('click', function () {
-        var label = (button.textContent || '').trim();
+    document.querySelectorAll('.ph-cta').forEach(function(el) {
+      el.addEventListener('click', function() {
         posthog.capture('trustedmagick_cta_click', {
-          cta_label: label,
-          cta_href: button.getAttribute('href') || '#'
+          project_id: 354015,
+          cta_label: (el.textContent || '').trim(),
+          cta_href: el.getAttribute('href') || '#'
         });
       });
     });
@@ -694,7 +1003,7 @@
 
     document.querySelectorAll('.reveal').forEach(function(el, index) {
       if (!el.classList.contains('visible')) {
-        el.style.transitionDelay = Math.min(index * 50, 350) + 'ms';
+        el.style.transitionDelay = Math.min(index * 45, 320) + 'ms';
       }
       observer.observe(el);
     });
